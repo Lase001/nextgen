@@ -28,6 +28,9 @@
   flex-direction: column;
   gap: 10px;
 }
+.text a{
+  color: white;
+}
 
 .contact-info span {
   display: flex;
