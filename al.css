@@ -1,0 +1,158 @@
+/* Container for splitting screen */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.banner {
+  background: url(./login-banner.1c3be38003c961098eed.png) no-repeat center center;
+  background-size: cover;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#text-wrap {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+/* Form container styling */
+.form-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.wrap a {
+  color: #ab2656;
+  text-decoration: none;
+}
+
+/* .logos {
+  margin-bottom: 20px;
+} */
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px; /* Adds a gap between each item in the .logos container */
+}
+
+.logo-item {
+  margin-right: 10px; /* Optional: Customize spacing for each logo individually */
+}
+
+.logo-text {
+  margin: 0 10px; /* Adjusts space specifically around the "Licensed by the CBN" text */
+}
+
+.login {
+  width: 100%;
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #d0d8d0;
+  outline: none;
+  transition: border-color 0.1s linear;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+.label {
+  font-size: 14px;
+  color: #24292f;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.btn {
+  background-color: #ab2656;
+  color: #fff;
+  font-size: 17px;
+  padding: 10px 0;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #92204c;
+}
+
+.signup-info {
+  margin-top: 20px;
+}
+
+.signup-info a {
+  color: #ab2656;
+  text-decoration: none;
+}
+
+.signup-info a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .banner, .form-container {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .wrap {
+    width: 90%;
+  }
+}
